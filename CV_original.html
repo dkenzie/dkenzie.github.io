@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
-<title>Resume May 20</title>
+<html lang="en">
+<title>Devon's Resume</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="navbar.js"></script>
 <style>
     html,
     body,
@@ -15,187 +17,266 @@
     h4,
     h5,
     h6 {
-        font-family: "Roboto", sans-serif
+        font-family: "Roboto", sans-serif;
+    }
+
+    .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
     }
 </style>
 
+<body>
 
-<body class="w3-light-grey">
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="index.html">Resume</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="Projects.html">Projects</a>
 
-    <!-- Page Container -->
-    <div class="w3-content w3-margin-top:px" style="max-width:1400px;">
-
-        <!-- The Grid -->
-        <div class="w3-row-padding">
-
-            <!-- Left Column -->
-            <div class="w3-third">
-
-                <div class="w3-white w3-text-grey w3-card-4">
-                    <div class="w3-display-container">
-                        <img src="/Website/photos/cropped_profile.jpg" style="width:100%" alt="Avatar">
-                        <div class="w3-display-bottom w3-container w3-text-black">
-                            <h2>Devon Kenzie</h2>
-                            <p> UBC Undergraduate acquiring research experience. <br>Creative problem solver, honest
-                                worker, passionate learner.</p>
-
-                        </div>
-                    </div>
-                    <div class="w3-container">
-                        <p><i class="fa fa-pencil-square-o fa-fw w3-margin-right w3-large w3-text-teal"></i>Student,
-                            Researcher, Software Engineer</p>
-                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Vancouver, BC</p>
-                        <p><i
-                                class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>devonkenzie@gmail.com
-                        </p>
-                        <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i><a
-                                href='https://github.com/dkenzie'>github.com/dkenzie</a></p>
-                        <p><i class="fa fa-linkedin-square fa-fw w3-margin-right w3-large w3-text-teal"></i><a
-                                href='https://www.linkedin.com/in/devon-kenzie/'>linkedin.com/in/devon-kenzie</a></p>
-                        <hr>
-
-                        <p class="w3-large"><b><i
-                                    class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Programming
-                                Experience</b></p>
-                        <p>Java</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-                        </div>
-                        <p>C/C++</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-                                <div class="w3-center w3-text-white">80%</div>
-                            </div>
-                        </div>
-                        <p>Javascript</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-                        </div>
-                        <p>Python</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%</div>
-                        </div>
-                        <p>C#, Prolog, Haskell</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-                        </div>
-                        <br>
-
-                        <p class="w3-large w3-text-theme"><b><i
-                                    class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-                        <p>English</p>
-                        <div class="w3-light-grey w3-round-xlarge">
-                            <div class="w3-round-xlarge w3-teal w3-center" style="height:24px;width:100%">100%</div>
-                        </div>
-                        <p>French</p>
-                        <div class="w3-light-grey w3-round-xlarge">
-                            <div class="w3-round-xlarge w3-teal w3-center" style="height:24px;width:75%">75%</div>
-                        </div>
-                        <br>
-                    </div>
-                </div><br>
-
-                <!-- End Left Column -->
-            </div>
-
-            <!-- <span class="w3-tag w3-teal w3-round"></span> use for current job !!! -->
-            <!-- Right Column -->
-            <div class="w3-twothird">
-
-
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i
-                            class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience
-                    </h2>
-                    <div class="w3-container">
-                        <h4 class="w3-opacity"><b>UBC Department of Urologic Sciences - <i>Vancouver, BC</i></b></h4>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2017 - May 2018
-                            <h7 class="w3-text-black"><b>: </b>Departmental Student Assistant</h7>
-                        </h6>
-                        <p>Maintenance of electronic databases, filing systems, deparment website. Support for
-                            department's administrative unit</p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h4 class="w3-opacity"><b>Social Planning and Research Council of BC - <i>Burnaby, BC</i></b>
-                        </h4>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2015 - Aug 2016
-                            <h7 class="w3-text-black"><b>: </b><i>Project Coordinator</i></h7>
-                        </h6>
-                        <p>Coordination and facilitation of employee activities & group processes. Support for Research
-                            and Consulting on official documents, reports and presentation. Assisted with new policy
-                            implementation, testing hardware, software and procedures prior to office-wide
-                            implementation.</p>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2013 - Dec 2015
-                            <h7 class="w3-text-black"><b>: </b><i>Administrative Assistant</i></h7>
-                        </h6>
-                        <p>Extensive data entry and analysis: Audio transcriptions, high-volume survey entry & trend
-                            analysis, google analytics for company website, SPSS statistical analysis. Support with
-                            company correspondence, document filing, transaction handling. Representing the organization
-                            through various channels.</p>
-                    </div>
-                </div>
-
-
-                <div class="w3-container w3-card w3-white">
-                    <h2 class="w3-text-grey w3-padding-16"><i
-                            class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-                    <div class="w3-container">
-                        <h4 class="w3-opacity"><b>University of British Columbia - <i>Vancouver, BC</i></b></h4>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2016 - <span
-                                class="w3-tag w3-teal w3-round">Current</span></h6>
-                        <p>4th year Cognitive Systems, B.Sc, Cognition and Brain specialization</p>
-                        Relevant courses:
-                        <ul>
-                            <li>CPSC:
-                                <ul>
-                                    <li>210: Software Construction</li>
-                                    <li>304: Relational Databases</li>
-                                    <li>312: Functional and Logic Programming</li>
-                                    <li>322: Intro to Artificial Intelligence</li>
-                                    <li>320: Intermediate Algorithm Design and Analysis</li>
-                                    <li>420: Advanced Algorithm Design and Analysis</li>
-                                </ul>
-                            <li>PSYC
-                                <ul>
-                                    <li>304: Behavioural Neuroscience</li>
-                                    <li>365: Cognitive Neuroscience</li>
-                                </ul>
-                            </li>
-                            <li>COGS
-                                <ul>
-                                    <li>300: Understanding & Designing Cognitive Systems</li>
-                                    <li>303: Integrated Research Methods</li>
-                                    <li>401: Entrepreneurial approach to COGS</li>
-                                    <li>402: Capstone Research Project</li>
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <hr>
-                    </div>
-
-                </div>
-
-                <!-- End Right Column -->
-            </div>
-
-            <!-- End Grid -->
         </div>
-
-        <!-- End Page Container -->
     </div>
 
-    <footer class="w3-container w3-teal w3-center w3-margin-top">
-        <p>Find me on social media.</p>
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
-        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </footer>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px; margin-top: 75px">
+
+
+        <body class="w3-light-grey">
+
+            <!-- Page Container -->
+            <div class="w3-content w3-margin-top:px" style="max-width:1400px;">
+
+                <!-- The Grid -->
+                <div class="w3-row-padding">
+
+                    <!-- Left Column -->
+                    <div class="w3-third">
+
+                        <div class="w3-white w3-text-grey w3-card-4">
+                            <div class="w3-display-container">
+                                <img src="photos/cropped_profile.jpg" style="width:100%" alt="Avatar">
+                                <div class="w3-display-bottom w3-container w3-text-black">
+                                    <h2>Devon Kenzie</h2>
+                                    <p> UBC Undergraduate acquiring research experience. <br>Creative problem solver,
+                                        honest
+                                        worker, passionate learner.</p>
+
+                                </div>
+                            </div>
+                            <div class="w3-container">
+                                <p><i
+                                        class="fa fa-pencil-square-o fa-fw w3-margin-right w3-large w3-text-teal"></i>Student,
+                                    Researcher, Software Engineer</p>
+                                <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Vancouver, BC
+                                </p>
+                                <p><i
+                                        class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>devonkenzie@gmail.com
+                                </p>
+                                <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i><a
+                                        href='https://github.com/dkenzie'>github.com/dkenzie</a></p>
+                                <p><i class="fa fa-linkedin-square fa-fw w3-margin-right w3-large w3-text-teal"></i><a
+                                        href='https://www.linkedin.com/in/devon-kenzie/'>linkedin.com/in/devon-kenzie</a>
+                                </p>
+                                <hr>
+
+                                <p class="w3-large"><b><i
+                                            class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Programming Experience</b></p>
+                                <p>C++</p>
+                                <div class="w3-light-grey w3-round-xlarge w3-small">
+                                    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%
+                                    </div>
+                                </div>
+                                <p>Java</p>
+                                <div class="w3-light-grey w3-round-xlarge w3-small">
+                                    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
+                                        <div class="w3-center w3-text-white">80%</div>
+                                    </div>
+                                </div>
+                                <p>Javascript</p>
+                                <div class="w3-light-grey w3-round-xlarge w3-small">
+                                    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%
+                                    </div>
+                                </div>
+                                <p>Python</p>
+                                <div class="w3-light-grey w3-round-xlarge w3-small">
+                                    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">60%
+                                    </div>
+                                </div>
+                                <p>C#, Prolog, Haskell, etc</p>
+                                <div class="w3-light-grey w3-round-xlarge w3-small">
+                                    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%
+                                    </div>
+                                </div>
+                                <br>
+
+                                <p class="w3-large w3-text-theme"><b><i
+                                            class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+                                <p>English</p>
+                                <div class="w3-light-grey w3-round-xlarge">
+                                    <div class="w3-round-xlarge w3-teal w3-center" style="height:24px;width:100%">100%
+                                    </div>
+                                </div>
+                                <p>French</p>
+                                <div class="w3-light-grey w3-round-xlarge">
+                                    <div class="w3-round-xlarge w3-teal w3-center" style="height:24px;width:75%">75%
+                                    </div>
+                                </div>
+                                <br>
+                            </div>
+                        </div><br>
+
+                        <!-- End Left Column -->
+                    </div>
+
+                    <!-- <span class="w3-tag w3-teal w3-round"></span> use for current job !!! -->
+                    <!-- Right Column -->
+                    <div class="w3-twothird">
+
+
+                        <div class="w3-container w3-card w3-white w3-margin-bottom">
+                            <h2 class="w3-text-grey w3-padding-16"><i
+                                    class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work
+                                Experience
+                            </h2>
+                            <div class="w3-container">
+                                <h4 class="w3-opacity"><b>UBC Visual Cognition Lab - <i>Vancouver, BC</i></b></h4>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Feb 2020 - <span class="w3-tag w3-teal w3-round">Current</span>
+                                    <h7 class="w3-text-black"><b>: </b><i>Research Co-Pilot / Directed Studies</i></h7>
+                                </h6>
+                                <p>Member of coding team, designing experiment to test the perception of correlation in multi-class scatterplots. Primarily using Javascript and d3/jsPsych libraries. 
+                                    Data analysis, literature review and experimental procedures while working under PhD candidate Madison Elliott and Dr Ronald Rensink.</p>                        
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                
+                                <h4 class="w3-opacity"><b>UBC Department of Urologic Sciences - <i>Vancouver, BC</i></b>
+                                </h4>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2017 -
+                                    May 2018
+                                    <h7 class="w3-text-black"><b>: </b><i>Departmental Student Assistant</i></h7>
+                                </h6>
+                                <p>Maintenance of electronic databases, filing systems, department website. Support for
+                                    department's administrative unit</p>
+                                <hr>
+                            </div>
+                            <div class="w3-container">
+                                <h4 class="w3-opacity"><b>Social Planning and Research Council of BC - <i>Burnaby,
+                                            BC</i></b>
+                                </h4>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dec 2015 -
+                                    Aug 2016
+                                    <h7 class="w3-text-black"><b>: </b><i>Project Coordinator</i></h7>
+                                </h6>
+                                <p>Coordination and facilitation of employee activities & group processes. Support for
+                                    Research
+                                    and Consulting on official documents, reports and presentation. Assisted with new
+                                    policy
+                                    implementation, testing hardware, software and procedures before to office-wide
+                                    implementation.</p>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2013 -
+                                    Dec 2015
+                                    <h7 class="w3-text-black"><b>: </b><i>Administrative Assistant</i></h7>
+                                </h6>
+                                <p>Extensive data entry and analysis: Audio transcriptions, high-volume survey entry &
+                                    trend
+                                    analysis, google analytics for company website, SPSS statistical analysis. Support
+                                    with
+                                    company correspondence, document filing, transaction handling. Representing the
+                                    organization
+                                    through various channels.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="w3-container w3-card w3-white">
+                            <h2 class="w3-text-grey w3-padding-16"><i
+                                    class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education
+                            </h2>
+                            <div class="w3-container">
+                                <h4 class="w3-opacity"><b>University of British Columbia - <i>Vancouver, BC</i></b></h4>
+                                <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Sep 2016 -
+                                    <span class="w3-tag w3-teal w3-round">Current</span></h6>
+                                <p>4th year B.Sc in Cognitive Systems - Cognition and Brain specialization</p>
+                                <p><i>Cognitive Systems is a multi-disciplinary undergraduate program involving the departments of Computer Science, Psychology, Philosophy, and Linguistics.
+                                    Cognition and Brain specialization has a focus on Computer Science and Psychology.</i></p>
+                                <!--
+                                Relevant courses:
+                                <ul>
+                                    <li>CPSC:
+                                        <ul>
+                                            <li>210: Software Construction</li>
+                                            <li>304: Relational Databases</li>
+                                            <li>312: Functional and Logic Programming</li>
+                                            <li>322: Intro to Artificial Intelligence</li>
+                                            <li>320: Intermediate Algorithm Design and Analysis</li>
+                                            <li>420: Advanced Algorithm Design and Analysis</li>
+                                        </ul>
+                                    <li>PSYC
+                                        <ul>
+                                            <li>304: Behavioural Neuroscience</li>
+                                            <li>365: Cognitive Neuroscience</li>
+                                        </ul>
+                                    </li>
+                                    <li>COGS
+                                        <ul>
+                                            <li>300: Understanding & Designing Cognitive Systems</li>
+                                            <li>303: Integrated Research Methods</li>
+                                            <li>401: Entrepreneurial approach to COGS</li>
+                                            <li>402: Capstone Research Project</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <hr>
+                            -->
+                                
+                            </div>
+
+                        </div>
+
+                        <!-- End Right Column -->
+                    </div>
+
+                    <!-- End Grid -->
+                </div>
+
+                <!-- End Page Container -->
+            </div>
+
+            <!-- END MAIN -->
+    </div>
+
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
+
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
+        }
+
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
 
 </body>
 

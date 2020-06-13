@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="mainstyle.css">
+<script src="navbar.js"></script>
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif;
+    }
+
+    .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 43px;
+        bottom: 0;
+        height: inherit;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <div class="w3-top">
+        <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+            <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1"
+                href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+           
+           <!-- trying to get sidebar to disappear-->
+           <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="javascript:void(0)" onclick="w3_close">Links</a>
+           
+           
+                <a class="w3-bar-item w3-button w3-theme-l1" href="index.html">About</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+                href="Website_CV.html">Resume</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-hover-white"
+                href="Projects.html">Projects</a>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu"><i class="fa fa-remove"></i></a>
+        <h4 class="w3-bar-item"><b>Links</b></h4>
+        <a class="w3-bar-item w3-button w3-hover-black" href="https://linkedin.com/in/devon-kenzie">linkedin</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="https://github.com/dkenzie">github</a>
+    </nav>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
+
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
+
+        <div
+            style="background-image: url('photos/Background_1_cropped.jpg'); background-repeat: no-repeat; background-size: cover">
+    
+            <div style="height:fit-content" class="w3-row w3-padding-64">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-opacity">About me</h1>
+                    <div class="container">
+                        <h2>
+                            As a Student
+                        </h2>
+                        <h5>
+                            Devon is in the final Summer of his Bachelor of Science (BSc) in Cognitive Systems at the
+                            University of British Columbia, an interdisciplinary program involving the departments of
+                            Computer Science, Psychology, Linguistics, and Philosophy. Devon is in the Brain and
+                            Cognition specialization
+                            of the program, with a focus on Computer Science – he believes the intelligent design of any
+                            system should be
+                            grounded in the understanding of what makes its predecessor successful, whether it be
+                            natural or artificial.
+                            He is currently working as a co-pilot at UBC’s Visual Cognition lab, working as part of
+                            their coding team
+                            investigating human perception of correlation.
+                        </h5>
+
+                        <h2>
+                            Outside school
+                        </h2>
+                        <h5>
+                            Devon is also a competitive athlete, having placed 2nd at the 2017
+                            International Dragonboat World Cup and 4th at the 2018 Club Crew World Championships. When
+                            he isn't training on thewater, Devon can usually be found enjoying the outdoors in some
+                            other
+                            way, escaping on hikes and camping trips whenever he is able to. He likes reading, spending
+                            time
+                            with friends, and supporting the local brewery scene.
+                        </h5>
+                    </div>
+                    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+                </div>
+
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-twothird w3-container">
+                    <h1 class="w3-opacity"></h1>
+                    <p></p>
+                </div>
+
+            </div>
+
+
+            <footer id="myFooter">
+                <div class="w3-container w3-theme-l2 w3-padding-32">
+                    <p><i
+                            class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-light-blue"></i>devonkenzie@mail.com
+                    </p>
+                    <p><i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-light-blue"></i><a
+                            href='https://github.com/dkenzie'>github.com/dkenzie</a></p>
+                    <p><i class="fa fa-linkedin-square fa-fw w3-margin-right w3-large w3-text-light-blue"></i><a
+                            href='https://www.linkedin.com/in/devon-kenzie/'>linkedin.com/in/devon-kenzie</a></p>
+                </div>
+
+                <div class="w3-container w3-theme-l1">
+                    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+                </div>
+            </footer>
+
+            <!-- END MAIN -->
+        </div>
+
+
+</body>
+
+</html>
