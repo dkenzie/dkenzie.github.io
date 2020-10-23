@@ -38,6 +38,7 @@
                 href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
             <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="index.html">Resume</a>
             <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="Projects.html">Projects</a>
+            <a class="w3-bar-item w3-button w3-hide-small w3-hover-white" href="About.html">About</a>
 
         </div>
     </div>
@@ -61,6 +62,9 @@
                         <h2 class="w3-text-grey w3-padding-16 "><i
                                 class="fa fa-wrench  fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i> -- Under Construction --</h2>
                         <h4 class="w3-opacity"><b></b></h4>
+                        <p>
+                            Additional projects such as Java transit application and C++ image manipulation are temporarily lost on school severs.
+                        </p>
 
                     </div>
 
@@ -74,9 +78,8 @@
 
                         <div class="w3-twothird">
                             <p>
-                                This was an exploratory project to learn the fundamentals of Neural Networks. We
-                                attempted to design a maze solving
-                                network with moderate success -this was a self-guided experimental study of network
+                                This was an exploratory project to learn about the fundamentals of Neural Networks - We
+                                attempted to design a maze solving network with moderate success. This was a self-guided  study of network
                                 designs and applications inspired by a 2019
                                 <a
                                     href='https://towardsdatascience.com/how-to-build-your-own-neural-network-from-scratch-in-python-68998a08e4f6'>blog
@@ -85,14 +88,14 @@
                                     href='http://iamtrask.github.io/2015/07/12/basic-python-network/'>A Neural Network
                                     in 11 lines of Python</a>.
                                 We first designed a trivial 2-layer network to determined whether a 3x3 maze had a
-                                solution in order to test learning speeds and
-                                activation functions. We then designed a more complex network which, given a maze of any
-                                size, could determine a solution path by
+                                solution - functionally, this networked was simply a library of 
+                                solvable mazes, but it allowed us to visualize learning speeds and different activation functions. 
+                                We then designed a slightly more complex network which, given a maze of any size, could determine a solution path by
                                 estimating the best possible move from any given tile. Despite the fact that Machine
-                                Learning is notoriously bad at maze solving, our network
-                                was able to solve mazes with 85%. This project taught us about backpropagation, data
-                                representations, over-training and many other
-                                basics of machine learning.
+                                Learning is notoriously bad at maze solving, our network was able to solve mazes with up to 85% accuracy. 
+                                This project taught us about backpropagation, data representations, over-training and many other
+                                basics of machine learning. This was a term project for COGS 301 at the University of British Columbia
+                                done in collaboration with Isabel Zorrilla.
                             </p>
 
                             <i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i><a href=>Github</a>
@@ -113,19 +116,18 @@
                             class="w3-quarter w3-margin-right w3-margin-bottom">
 
                         <div class="w3-twothird">
-                            <p>Explored the feasibility of using Haskell to create personal and creative artwork.
-                                Based off of <a href='http://nifty.stanford.edu/2018/stephenson-mondrian-art/'>Dr. Ben
+                            <p>We explored the feasibility of using a functional programming language such as Haskell
+                                 to create personal and creative artwork. Based off of 
+                                 <a href='http://nifty.stanford.edu/2018/stephenson-mondrian-art/'>Dr. Ben
                                     Stephenson's Mondrian Art</a> project,
                                 we used Haskell to implement a recursive algorithm that outputs Mondrian-style art.
-                                Users are asked to pick a colour palette,
-                                The program allows for different strategies for creating shapes and sizes to reflect the
-                                user's artistic creativity, so that
-                                the user can create, interact with, and view their own unique artwork. Beginner project
-                                for CPSC 312 at the university of British
-                                Columbia in collaboration with Myla White.
+                                Users are asked to pick a colour palette, the program allows for different strategies for creating
+                                 shapes and sizes to reflect the user's artistic creativity, so that the user can create, interact
+                                  with, and view their own unique artwork. This was a term project for CPSC 312 at the 
+                                  University of British Columbia done in collaboration with Myla White.
                             </p>
                             <p><i class="fa fa-wikipedia-w fa-fw w3-margin-right w3-large w3-text-teal"></i><a
-                                    href='https://wiki.ubc.ca/Course:CPSC312-2018-Random-Mondrian-Art'>Wikipedia</a></p>
+                                    href='https://wiki.ubc.ca/Course:CPSC312-2018-Random-Mondrian-Art'>UBC Wiki</a></p>
                             <i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i><a
                                 href='https://github.com/mwhite98/random-mondrians'>Github</a></p>
                         </div>
@@ -143,24 +145,28 @@
 
 
                         <div class="w3-twothird">
-                            <p>Designed a simple crime solver using Prolog. Given witness testimony and details of
-                                simple crimes,
-                                we can determine who is responsible for a particular crime. We used Prolog's JSON
-                                libraries in order to
+                            <p>We designed a simple "crime solver" using the functional programming language Prolog.
+                                 Given witness testimony and crime data, we can determine who is responsible 
+                                 for a particular crime. We used Prolog's JSON libraries in order to
                                 download actual crime data from the city of Vancouver's
-                                <a href="https://opendata.vancouver.ca/pages/home/">Open Data Catalogue for crimes</a>
-                                in 2018, and
-                                we are able to determine who is guilty based off of the location of the suspects,
-                                evidence found at the
-                                crime and inconsistencies in suspect/witness testimonies (used only a small subset of
-                                actual)
+                                <a href="https://opendata.vancouver.ca/pages/home/">Open Data Catalogue for Crimes</a>
+                                in 2018, and by parsing this data
+                                we were able to determine who was guilty based off of crime data such as:
+                                <ul>
+                                    <li>The type of crime committed</li>
+                                    <li>Suspect alibis</li>
+                                    <li>Evidence found at the scene of the crime</li>
+                                    <li>Inconsistencies in suspect/witness testimonies</li>
+                                </ul>
+                                Note that this was a proof of concept and a venture into functional programming, and we 
+                                used only a small subset of the Open Data Catalogue for Crimes database.
                                 <br>
 
 
 
                             </p>
                             <p><i class="fa fa-wikipedia-w fa-fw w3-margin-right w3-large w3-text-teal"></i><a
-                                    href='https://wiki.ubc.ca/Course:CPSC312-2018-Crime-Solver'>Wikipedia</a></p>
+                                    href='https://wiki.ubc.ca/Course:CPSC312-2018-Crime-Solver'>UBC Wiki</a></p>
                             <i class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i><a
                                 href='https://github.com/mwhite98/crime-solver'>Github</a></p>
                         </div>
